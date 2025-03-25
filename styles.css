@@ -2,3 +2,71 @@
     box-sizing: border-box;
     margin: 0;
 }
+
+.main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: aqua;
+    height: 100vh;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 0.9rem;
+}
+
+.container {
+    text-align: center;
+    width: 100vw;
+    padding: 16px;
+    
+}
+
+.nav-bar-section {
+    margin-bottom: auto;
+}
+
+.list {
+    display: flex;
+    justify-content: space-around;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.list a {
+    color: black;
+    text-decoration: none;
+}
+
+.footer {
+    margin-top: auto;
+}
+
+.nav-bar-section, 
+.footer-section {
+    height: 50px;
+    width: 100vw;
+    text-align: center;
+    background-color: blue;
+}
+
+.landing-section {
+    background-color: dodgerblue;
+    margin: auto;
+}
+
+.about-me-section {
+    background-color: pink;
+    padding: 16px;
+    margin: auto;
+}
+
+.projects-section {
+    background-color: cornflowerblue;
+    margin: auto;
+
+}
+
+.contact-section {
+    background-color: darkcyan;
+    margin: auto;
+}
