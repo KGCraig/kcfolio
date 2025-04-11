@@ -21,6 +21,7 @@
 
 .container {
     width: 100vw;
+    text-align: center;
 }
 
 .nav-bar-section {
@@ -71,10 +72,32 @@
 .projects-section {
     background-color: cornflowerblue;
     margin: auto;
+}
 
+.projects-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 24px;
+    margin-top: 34px;
 }
 
 .contact-section {
     background-color: darkcyan;
     margin: auto;
+}
+
+.sample-project {
+    display: block;
+    text-align: center;
+}
+
+.sample-project img {
+    width: 100px;
+}
+
+.sample-project strong {
+    display: block;
+    font-weight: bolder;
+    font-size: 1.1rem;
 }
