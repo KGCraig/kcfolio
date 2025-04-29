@@ -6,39 +6,54 @@
 .main {
     display: flex;
     flex-direction: column;
-    background-color: aqua;
-    height: 100vh;
+    align-items: center;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    font-size: 0.9rem;
+    font-size: 0.7rem;
 }
 
-.logo {
-    width: 250px;
-    background-color: black;
-    color: white;
-    margin: auto;
+/* GENERAL / MULTIPURPOSE */
+.section {
+    padding: 34px 0;
 }
 
-.container {
-    width: 100vw;
+
+.center {
     text-align: center;
 }
 
-.nav-bar-section {
-    display: flex;
-    margin-bottom: auto;
+
+.logo {
+    color: white;
+    font-size: 1.4em;
+    font-weight: bolder;
+    margin-left: 8px;
+
 }
 
-.nav-list {
-    margin: auto;
+.nav-bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 50px;
+    padding: 20px;
+    font-size: 1.3em;
+    position: sticky;
+    top: 0;
+    overflow: hidden;
+    
 }
 
 .nav-list ul {
     display: flex;
-    justify-content: space-around;
-    width: 80vw;
+    justify-content: space-between;
+    gap: 24px;
     list-style-type: none;
     padding: 0;
+}
+
+.nav-list a {
+    color: white;
+    text-decoration: none;
 }
 
 .contact-list {
@@ -53,55 +68,60 @@
 .contact-list a {
     color: black;
     text-decoration: none;
-}
-
-
-.nav-list a {
-    color: black;
-    text-decoration: none;
+    font-size: 1.2em;
 }
 
 .footer {
-    margin-top: auto;
+    color: white;
 }
 
-.nav-bar-section, 
-.footer-section {
-    height: 50px;
-    width: 100vw;
-    text-align: center;
-    background-color: blue;
+.footer img {
+    width: 32px;
+    height: 32px;
+    padding: 2px;
+    background-color: white;
+    border-radius: 8px;
 }
 
-.landing-section {
-    background-color: dodgerblue;
-    margin: auto;
+.footer ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 24px;
+    list-style-type: none;
+    padding: 0; 
 }
 
-.about-me-section {
-    background-color: pink;
-    padding: 16px;
-    margin: auto;
+.nav-bar, 
+.footer {
+    width: 100%;
+    background-color: rgb(47, 47, 47);
 }
 
-.projects-section {
-    background-color: cornflowerblue;
-    margin: auto;
+
+div.skills {
+
 }
+
+div.skills ul {
+    display: flex;
+    justify-content: space-between;
+    gap: 24px;
+    list-style-type: none;
+    padding: 0;
+}
+
+
 
 .projects-container {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
     gap: 24px;
-    margin-top: 34px;
+    margin: 34px 0;
 }
 
-.contact-section {
-    background-color: darkcyan;
-    margin: auto;
-}
-
+/* Project */
 .sample-project {
     display: block;
     text-align: center;
@@ -115,4 +135,14 @@
     display: block;
     font-weight: bolder;
     font-size: 1.1rem;
+}
+
+hr {
+    border-width: 3px;
+    border-style: none;
+    border-top-style: dotted;
+    color: #00000077;
+    margin-inline: 0;
+    margin-block: 0;
+    width: 80%;
 }
