@@ -6,6 +6,7 @@
 html {
     scroll-behavior: smooth;
     scroll-padding-top: 6rem;
+    
 }
 
 .main {
@@ -13,14 +14,14 @@ html {
     flex-direction: column;
     align-items: center;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    font-family: 'Times New Roman', Times, serif;
-    font-size: 0.8rem;
-    min-width: 250px;
+    font-size: 0.7rem;
+    min-width: 300px;
 }
 
 /* GENERAL / MULTIPURPOSE */
 .section {
     padding: 34px 0;
+    margin: 0 40px;
 }
 
 
@@ -140,20 +141,31 @@ html {
 
 .nav-bar, 
 .footer {
+    min-width: 100%;
     width: 100%;
     background-color: rgb(47, 47, 47);
 }
 
 
-div.skills {
-
+div.skills ul {
+    margin-top: 6px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 8px;
+    list-style-type: disc;
+    padding: 0;
+    text-align: left;
 }
 
-div.skills ul {
+div.skills ul li ul {
+    margin-top: 6px;
     display: flex;
+    flex-direction: column;
     justify-content: space-between;
-    gap: 24px;
-    list-style-type: none;
+    list-style-position: inside;
+    gap: 8px;
+    list-style-type: circle;
     padding: 0;
 }
 
@@ -207,6 +219,69 @@ hr {
      rgba(163, 163, 163, 0)
      );
 }
+
+/* Contact Container */
+
+.contact p {
+    font-size: 1.1rem;
+}
+
+
+.contact-container {
+    display: flex;
+    justify-content: center;
+    padding: 14px;
+
+    border: none;
+    background-color: rgb(47, 47, 47);
+
+    font-weight: bolder;
+    font-size: 0.9rem;
+    color: white;
+}
+
+.contact-container label {
+    display: block;
+    margin-top: 8px;
+    width: 100%;
+}
+
+.resize {
+    resize: vertical;
+}
+
+.contact-container button {
+    display: block;
+    margin-top: 8px;
+    margin-left: auto;
+    margin-right: auto;
+
+    border: 2px solid white;
+    padding: 10px;
+    width: 75px;
+    border-style: none;
+    border-radius: 1rem;
+    font-weight: bold;
+
+    
+}
+
+.contact-container input[type=submit]:hover {
+    background-color: rgb(186, 186, 186);
+    cursor: pointer;
+}
+
+.contact-container input[type=text] {
+    width: 300px;
+
+}
+
+.contact-container textarea {
+    width: 100%;
+    min-height: 50px;
+    max-height: 500px;
+}
+
 
 /* Media Queries */
 
