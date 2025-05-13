@@ -28,9 +28,7 @@ html {
     margin: 0 40px;
 }
 
-.project-page {
-    text-align: left;
-}
+
 
 .center {
     text-align: center;
@@ -262,6 +260,9 @@ div.skills ul li ul {
     padding: 0;
 }
 
+
+
+/* Project */
 .projects-container {
     display: flex;
     justify-content: center;
@@ -272,7 +273,22 @@ div.skills ul li ul {
     min-width: 0;
 }
 
-/* Project */
+.project-page {
+    text-align: left;
+    text-wrap: pretty;
+    width: 100vw;
+    padding: 30px;
+}
+
+.project-page img {
+    display: block;
+    object-fit: contain;
+    max-width: 100%;
+    max-height: 100%;
+    width: auto;
+    height: auto;
+}
+
 .project {
     display: flex;
     flex-direction: column;
@@ -302,19 +318,29 @@ div.skills ul li ul {
     font-size: 0.9rem;
 }
 
-hr {
-    border-width: 3px;
-    border-style: none;
-    border-top-style: dotted;
-    color: #00000077;
-    margin-inline: 0;
-    margin-block: 0;
-    width: 80%;
-    background: linear-gradient(to right, #911a80, #d42b45);
-    background-clip: text;
-    color: transparent;
-    display: inline-block;
+/* Separators, Page Nav */
 
+.back-to-top {
+    display: flex;
+    flex-direction: column;
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-decoration: none;
+    margin: 10px 0;
+}
+
+
+
+hr {
+    width: 80%;
+    border: 0;
+    height: 2px;
+    background-image: linear-gradient(to right,
+    rgba(163, 163, 163, 0),
+    rgb(117, 117, 117),
+    rgb(117, 117, 117),
+    rgba(163, 163, 163, 0));
+    margin: 20px 0;
 }
 
 .separator {
