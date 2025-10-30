@@ -3332,3 +3332,8 @@ input, select, textarea {
 			}
 
 		}
+
+/* Resume Section */
+.resume-section {
+	margin-bottom: 2em;
+}
