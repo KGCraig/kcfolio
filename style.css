@@ -1,0 +1,177 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: Tahoma, Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    color: #333;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: rgb(142, 142, 142);
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    background-color: black;
+    padding: 14px;
+    position: relative;
+    top: 0;
+}
+
+/* Nav Menu */
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    display: flex;
+    justify-content: right;
+}
+
+nav li a {
+    display: block;
+    padding: 1.5rem;
+}
+
+nav ul li:last-child {
+    margin-bottom: 0;
+}
+
+nav a:link, nav a:visited {
+    color: white;
+    text-decoration: none;
+}
+
+
+/* Navigation Button (Hamburger Menu for Smaller Screens) */
+.dropdown #nav-button {
+    display: none;
+    font-size: 1.5rem;
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+    justify-self: right;
+}
+
+.dropdown #nav-button:hover, .dropdown #nav-button:focus {
+    color: red;
+}
+
+.dropdown #nav-button:not(hover),
+.dropdown #nav-button:not(focus) {
+    color: white;
+}
+
+/* Dropdown Menu */
+.dropdown {
+    position: relative;
+}
+
+#DropdownItems.dropdown-content {
+    display: none;
+    position: absolute;
+    right: 0;
+    margin-top: 14px;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    overflow: auto;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+#DropdownItems.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+#DropdownItems.dropdown-content.show {
+    display: block;
+}
+
+/* Section */
+
+section {
+    margin: 1rem 0;
+}
+
+#Biography {
+    display: flex;
+    width: 100%;
+    gap: 1rem;
+}
+
+
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: rgb(235, 235, 235);
+    padding: 2rem 0;
+    flex-shrink: 0;
+    margin-top: auto;
+}
+
+/* --- Media Queries --- */
+
+/* Responsive Nav */
+@media (max-width: 768px) {
+    nav ul {
+        display: none;
+        }
+
+    header {
+        position: sticky;
+    }
+
+    .dropdown #nav-button {
+        display: block;
+        }
+    }
+
+
+/* --- Other Custom Classes --- */
+.main-content {
+    margin: 0 1rem;
+    margin: auto 1rem;
+    padding: 1.5rem;
+    background-color: white; 
+}
+
+.heading {
+    font-family: "Century Gothic", Arial, Tahoma, Helvetica, sans-serif;
+    color: #333;
+    margin: 0.8rem 0;
+}
+
+.content {
+    background-color: rgb(185, 156, 213);
+    width: 100%;
+    height: 100%;
+    padding: 0.8rem;
+}
+
+.left {
+    text-align: left;
+    justify-self: left;
+}
+
+.center {
+    text-align: center;
+}
+
+.right {
+    text-align: right;
+    justify-self: right;
+}
