@@ -30,6 +30,10 @@ header {
     top: 0;
 }
 
+header, footer {
+    background-color: #333;
+}
+
 /* Nav Menu */
 nav ul {
     list-style: none;
@@ -122,10 +126,8 @@ section {
 }
 
 
-
 /* Footer */
 footer {
-    background-color: #333;
     color: rgb(235, 235, 235);
     padding: 2rem 0;
     flex-shrink: 0;
@@ -161,6 +163,17 @@ footer {
     min-height: 100vh;
 }
 
+
+/* Footer Classes */
+.footer-icons i {
+    margin: 1.2rem 0.5rem;
+    font-size: 1.8rem;
+}
+
+.footer-icons a {
+    color: inherit;
+}
+
 .heading {
     font-family: "Century Gothic", Arial, Tahoma, Helvetica, sans-serif;
     color: #333;
@@ -174,6 +187,7 @@ footer {
     margin: 2rem;
 }
 
+/* Project Classes */
 .row {
     display: flex;
     flex-wrap: wrap;
@@ -189,7 +203,8 @@ footer {
     padding: 4px;
     overflow-wrap: break-word;
     border-radius: 8px;
-    box-shadow: 5px 5px 5px #00000033;
+    box-shadow: 0 5px 5px #00000033;
+    background-color: white;
 }
 
 .project-container a, a:visited, a:hover, a:active {
@@ -217,6 +232,7 @@ footer {
     margin: 4px 0;
 }
 
+/* Other Classes */
 .content {
     background-color: rgb(185, 156, 213);
     width: 100%;
@@ -236,4 +252,35 @@ footer {
 .right {
     text-align: right;
     justify-self: right;
+}
+
+/* Animations */
+
+
+/* Zoom Animations */
+@keyframes bigZoom {
+    0% {transform: scale(1);}
+    100% {transform: scale(1.5);}
+}
+
+@keyframes smallZoom {
+    0% {
+        transform: scale(1);
+    }
+
+    100% {
+        transform: scale(1.1);
+    }
+}
+
+.footer-icons i:hover {
+    animation-name: bigZoom;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+}
+
+.project-container:hover {
+    animation-name: smallZoom;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
 }
