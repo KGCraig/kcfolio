@@ -18,6 +18,7 @@ document.addEventListener('click', (event) => {
   if (navList.classList.contains('show')) {
     navList.classList.remove('show');
     navButton.setAttribute('aria-expanded', 'false');
+    navButton.blur()
     navButton.style.color = '';
   }
 });
@@ -27,6 +28,7 @@ navList.querySelectorAll('a').forEach(link => {
   link.addEventListener('click', () => {
     navList.classList.remove('show');
     navButton.setAttribute('aria-expanded', 'false');
+    navButton.blur()
     navButton.style.color = '';
   });
 });

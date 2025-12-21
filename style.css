@@ -8,6 +8,9 @@ html {
     font-family: Tahoma, Arial, Helvetica, sans-serif;
     font-size: 16px;
     color: #333;
+    scroll-behavior: smooth;
+    min-width: 500px;
+    min-height: 500px;
 }
 
 body {
@@ -57,14 +60,16 @@ nav a:link, nav a:visited {
     display: none;
     font-size: 1.5rem;
     background: none;
-    border: none;
+    border: 1px solid rgba(0, 0, 0, 0);
     color: white;
     cursor: pointer;
     justify-self: right;
+    padding: 6px;
 }
 
 .dropdown #nav-button:hover, .dropdown #nav-button:focus {
-    color: red;
+    border: 1px solid rgb(255, 255, 255);
+    border-radius: 8%;
 }
 
 .dropdown #nav-button:not(hover),
@@ -98,6 +103,10 @@ nav a:link, nav a:visited {
 
 #DropdownItems.dropdown-content.show {
     display: block;
+}
+
+#DropdownItems.dropdown-content a:hover {
+    background-color: rgb(220, 220, 220);
 }
 
 /* Section */
@@ -140,19 +149,72 @@ footer {
         }
     }
 
+    hr {
+        margin: 3rem 0;
+    }
 
 /* --- Other Custom Classes --- */
 .main-content {
-    margin: 0 1rem;
     margin: auto 1rem;
-    padding: 1.5rem;
-    background-color: white; 
+    padding: 1.5rem 8rem;
+    background-color: white;
+    min-height: 100vh;
 }
 
 .heading {
     font-family: "Century Gothic", Arial, Tahoma, Helvetica, sans-serif;
     color: #333;
     margin: 0.8rem 0;
+}
+
+.project-heading {
+    font-family: "Century Gothic", Arial, Tahoma, Helvetica, sans-serif;
+    color: #333;
+    font-size: 1.3rem;
+    margin: 2rem;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 32px;
+    margin: auto;
+}
+
+.project-container {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    flex: 0 0 30%;
+    padding: 4px;
+    overflow-wrap: break-word;
+    border-radius: 8px;
+    box-shadow: 5px 5px 5px #00000033;
+}
+
+.project-container a, a:visited, a:hover, a:active {
+    text-decoration: none;
+    color: inherit;
+    height: 100%;
+}
+
+.project-title {
+    font-size: 1.5rem;
+}
+
+.project-img {
+    aspect-ratio: 16 / 9;
+    height: auto;
+    max-width: 100%;
+    max-height: 100%;
+    flex-shrink: 1;
+    border-radius: 4px 4px 0 0;
+
+}
+
+.project-desc {
+    flex-shrink: 0;
+    margin: 4px 0;
 }
 
 .content {
