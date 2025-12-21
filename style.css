@@ -20,12 +20,19 @@ body {
     background-color: rgb(142, 142, 142);
 }
 
+a {
+    color: #333;
+}
+
+a:visited {
+    color: #333
+}
+
 header {
     display: flex;
     justify-content: space-between;
     flex-direction: column;
     background-color: black;
-    padding: 14px;
     position: relative;
     top: 0;
 }
@@ -47,6 +54,12 @@ nav ul {
 nav li a {
     display: block;
     padding: 1.5rem;
+    height: 100%;
+    transition-duration: 0.2s;
+}
+
+nav li a:hover {
+    background-color: #5c5c5c;
 }
 
 nav ul li:last-child {
@@ -187,7 +200,7 @@ footer {
 .row {
     display: flex;
     flex-wrap: wrap;
-    gap: 32px;
+    gap: 22px;
     margin: auto;
 }
 
@@ -274,6 +287,39 @@ footer {
     background-color: #333;
     color: white;
 }
+
+
+/* Resume Page */
+.resume-subheader {
+    font-weight: lighter;
+    color:rgb(71, 71, 71);
+}
+
+.resume-section {
+    margin: 3rem 0;
+}
+
+.resume-section li {
+    list-style-type: circle;
+    margin-left: 2rem;
+}
+
+.resume-section button {
+    padding: 20px 30px;
+    border-radius: 8px;
+    border: 1px solid #333;
+    background-color: #333;
+    color: white;
+    font-family: inherit;
+    text-decoration: none;
+}
+
+.resume-section button:hover {
+    cursor: pointer;
+    background-color: #5c5c5c;
+    border: 1px solid #5c5c5c;
+}
+
 
 
 /* Other Classes */
