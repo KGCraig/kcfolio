@@ -155,6 +155,7 @@ footer {
         margin: 3rem 0;
     }
 
+    
 /* --- Other Custom Classes --- */
 .main-content {
     margin: auto 1rem;
@@ -174,12 +175,8 @@ footer {
     color: inherit;
 }
 
-.heading {
-    font-family: "Century Gothic", Arial, Tahoma, Helvetica, sans-serif;
-    color: #333;
-    margin: 0.8rem 0;
-}
 
+/* Project Classes */
 .project-heading {
     font-family: "Century Gothic", Arial, Tahoma, Helvetica, sans-serif;
     color: #333;
@@ -187,7 +184,6 @@ footer {
     margin: 2rem;
 }
 
-/* Project Classes */
 .row {
     display: flex;
     flex-wrap: wrap;
@@ -232,12 +228,66 @@ footer {
     margin: 4px 0;
 }
 
+
+/* Contact Form */
+
+.fields {
+    padding: 4px;
+    width: 100%;
+    height: 100%;
+}
+
+.field {
+    padding: 5px;
+}
+
+.field label {
+    margin-bottom: 0.8rem;
+    margin-top: 1rem;
+}
+
+.field #name, 
+.field #email,
+.field #subject
+{
+    width: 100%;
+    padding: 10px;
+    resize: none;
+}
+
+.field #message {
+    width: 100%;
+    padding: 10px;
+    resize: none;
+}
+
+.field.button input[type=submit] {
+    padding: 1.5rem 3rem;
+    font-family: inherit;
+    font-weight: bold;
+    border-radius: 8px;
+    border: 1px solid white;
+}
+
+.field.button input[type=submit]:hover {
+    cursor: pointer;
+    background-color: #333;
+    color: white;
+}
+
+
 /* Other Classes */
 .content {
     background-color: rgb(185, 156, 213);
     width: 100%;
     height: 100%;
     padding: 0.8rem;
+}
+
+.heading {
+    font-family: "Century Gothic", Arial, Tahoma, Helvetica, sans-serif;
+    color: #333;
+    margin: 0.8rem 0;
 }
 
 .left {
@@ -254,8 +304,8 @@ footer {
     justify-self: right;
 }
 
-/* Animations */
 
+/* Animations */
 
 /* Zoom Animations */
 @keyframes bigZoom {
